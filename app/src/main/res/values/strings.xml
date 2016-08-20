@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">简单记事</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">设置</string>
+    <string name="color_palette">主色调</string>
+    <string name="colors">颜色</string>
+    <string name="done_label">确定</string>
+    <string name="cancel_label">取消</string>
+    <string name="back_label">返回</string>
+    <string name="custom_label">自定义颜色</string>
+    <string name="presets_label">预设颜色</string>
+    <string name="item_color">选择事务颜色</string>
+    <string name="delete_item_string">确定要删除该事务吗?</string>
+    <string name="agree">确定</string>
+    <string name="disagree">取消</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="about_me">初学Android,这款应用只是一个练手,存在Bug在所难免,如果有任何问题或者建议请和我联系\n邮箱:932992110@qq.com</string>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toolbar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/create_item_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            toolbar:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+            toolbar:title="新建循环事务"
+            toolbar:titleTextColor="#FFFFFF"
+            android:id="@+id/create_item_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+        </android.support.v7.widget.Toolbar>
+
+        <EditText
+            android:layout_marginLeft="70dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/item_name"
+            android:textSize="30sp"
+            android:hint="事务名称                             "
+            android:maxLines="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:divider="@drawable/divider"
+            android:showDividers = "middle|end|beginning|none"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TabLayout
+                    android:tint="@color/uncheck_color"
+                    app:tabTextColor="@color/uncheck_color"
+                    app:tabIndicatorColor="@color/colorPrimary"
+                    android:id="@+id/type_tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/ic_subtitles_black_24dp"
+                    android:tint="@color/uncheck_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/item_detail"
+                    android:hint="详细描述"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_item_color_selector"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/item_color_selector"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_item_color"
+                    android:tint="@color/uncheck_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageView_color"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@color/colorPrimary"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_begin"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/begintime_date"
+                    android:layout_gravity="center_vertical|left"
+                    android:tint="@color/uncheck_color"
+                    android:src="@drawable/ic_timer_grey600_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/begindate_tv"
+                    android:text="起始日期"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/item_recycle"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:tint="@color/uncheck_color"
+                    android:src="@drawable/ic_rotate_3d_grey600_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="重复时间"
+                    android:id="@+id/item_recycle_tv"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_notification"
+                android:layout_margin="20dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:tint="@color/uncheck_color"
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="次要:振动,可移除的通知"
+                    android:id="@+id/item_notification_tv"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

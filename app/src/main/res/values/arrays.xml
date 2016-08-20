@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="notifications">
+        <item>次要:振动,可移除的通知</item>
+        <item>一般:振动和铃声,可移除的通知</item>
+        <item>重要:振动和铃声,不可移除的通知</item>
+    </string-array>
+
+    <string-array name="recycle_type">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+
+</resources>
